@@ -22,7 +22,7 @@ All files necessary to run these scripts, including RepeatMasker outputs, are av
 
 - [Cichlids_lamellae.R](Cichlids_lamellae.R) : Generate bed files with chemoreceptors coordinates and launch the script ClustEnrichTE.sh
 
-Pictures of olfactory epithelium, and all files necessary to run this script are available on Zenodo (), in the directory "Olfactory_epithelium" and in the directory "Dataset_and_various_data_Cichlids"
+Pictures of olfactory epithelium, brains CTscans data and all files necessary to run this script are available on Zenodo (), in the directory "Olfactory_epithelium", in the directory "Brain_CTscans" and in the directory "Dataset_and_various_data_Cichlids"
 
 
 ## IV - Chemoreception analysis
