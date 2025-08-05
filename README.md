@@ -20,7 +20,7 @@ All files necessary to run these scripts, including RepeatMasker outputs, are av
 
 ## III - Lamellae number and brain volume analysis
 
-- [TCichlids_lamellae.R](Cichlids_lamellae.R) : Generate bed files with chemoreceptors coordinates and launch the script ClustEnrichTE.sh
+- [Cichlids_lamellae.R](Cichlids_lamellae.R) : Generate bed files with chemoreceptors coordinates and launch the script ClustEnrichTE.sh
 
 Pictures of olfactory epithelium, and all files necessary to run this script are available on Zenodo (), in the directory "Olfactory_epithelium" and in the directory "Dataset_and_various_data_Cichlids"
 
