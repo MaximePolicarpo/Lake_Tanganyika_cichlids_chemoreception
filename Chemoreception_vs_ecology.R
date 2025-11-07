@@ -225,6 +225,16 @@ Cichlids_length_weight_sp <-
   )
 
 
+#### Data load - Rythm   ---------------------------------
+
+rythm_cichlids_df <- 
+  read.table("Rythm_cichlids.tsv",
+             sep="\t",
+             header=FALSE)
+
+colnames(rythm_cichlids_df) <- c("Sp", "rythm")
+
+
 #### Combine dataframes and prepare pGLS caper data  ---------------------------------
 
 #Define the tribe colors (same as Ronco et al. 2021)
@@ -248,6 +258,8 @@ Cichlids_chemoreception_df <-
 Cichlids_chemoreception_df <- 
   left_join(Cichlids_chemoreception_df, Cichlids_length_weight_sp, by=c("Sp"))
 
+Cichlids_chemoreception_df <- 
+  left_join(Cichlids_chemoreception_df, rythm_cichlids_df, by=c("Sp"))
 
 
 write.table(Cichlids_chemoreception_df,
@@ -683,7 +695,7 @@ Chemoreception_numerical_pGLS_df %>%
 
 
 categorical_predictors <- 
-  c("Food", "habitat", "breeding_type", "breeding_mode")
+  c("Food", "habitat", "breeding_type", "breeding_mode", "rythm")
 
 abnorm_termination <- 
   c("Beta-2_Food", "Delta-11_breeding_mode", "Epsilon-3_Food",
